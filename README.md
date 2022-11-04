@@ -7,9 +7,9 @@ Golang questions
 4. What is an interface?  
  - What is the empty interface?
 
-What are the three uses of "..." in Go?
-What's the difference between a type definition and a type alias?
-What does the keyword "make" do?
+What are the three uses of "..." in Go?  
+What's the difference between a type definition and a type alias?  
+What does the keyword "make" do?  
 
 What is the output of the below code?
 
@@ -51,4 +51,21 @@ fmt.Println(arr1==arr2)
 11. Explain the defer statement in Golang. Give an example of a deferred function’s call.
  - In what order are multiple defer statements called?
 
+Review below code
+```Go
 
+func main() {
+  count := 5
+  if count > 5 {
+    message := "Greater than 5"
+  } else {
+    message := "Not greater than 5"
+  }
+  fmt.Println(message)
+}
+```
+
+
+what is the Reflection (reflect) in Go ?
+
+what is the unsafe package in Go ?
