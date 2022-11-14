@@ -45,12 +45,12 @@ arr2 := [...]int{2,3}
 fmt.Println(arr1==arr2)
 ```
 
-Explain bellow code
+Explain the code below
 ```Go
 r := [...]int{99: -1}
 ```
 
-what is the output?
+What is the output of the below code?
 ```Go
 s := []int{5, 6, 7, 8, 9}
 s[3] = s[len(s)-1]
@@ -70,7 +70,7 @@ fmt.Println(s)
 11. Explain the defer statement in Golang. Give an example of a deferred function’s call.
  - In what order are multiple defer statements called?
 
-Review below code
+Review the code below
 ```Go
 
 func main() {
@@ -84,8 +84,33 @@ func main() {
 }
 ```
 
-Explain struct in Go
+Explain struct in Go (exported, embedding and anonymous fields)
 
+what does "Arguments are passed by value" mean in functions? 
+if arguments are pointer, slice, map, function, or channel ?
+explain about function return
+
+Explain the code below?
+```Go
+var f func(int) int
+f(3)
+```
+
+what is the Anonymous Functions in Go ?
+
+What is the output of the below code?
+```Go
+func sum(vals ...int) int {
+    total := 0
+    for _, val := range vals {
+        total += val
+    }
+    return total
+}
+func main(){
+  fmt.Println(sum())
+}
+```
 
 what is the Reflection (reflect) in Go ?
 
