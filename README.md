@@ -13,8 +13,6 @@ fmt.Println(sum)
 - What do you understand by byte and rune data types? How are they represented?
 - What is a goroutine? what is difference between thread?
 - Deadlocks and race conditions?
-- What is an interface?  
-- What is the empty interface?
 
 - What are the three uses of "..." in Go?  
 - What's the difference between a type definition and a type alias?  
@@ -66,6 +64,15 @@ s[3] = s[len(s)-1]
 s = s[:len(s)-1]
 fmt.Println(s)
  ```
+ 
+ - What is the output of the below code?
+ ```Go
+s := []int{1, 2, 3}
+func(l []int) {
+   l[0] = 42
+}(s)
+fmt.Println(s[0]) 
+```
 
 - What is the channel? 
 - What operations are available on the channel type?
@@ -120,6 +127,13 @@ func main(){
   fmt.Println(sum())
 }
 ```
+- Explain the Panic and Recover in Go.
+
+- What is the method and method’s receiver in Go?
+- What is difference between pointer and value receiver in methods?
+
+- What is an interface? 
+- What is the empty interface and type Assertion?
 
 - What is the Reflection (reflect) in Go ?
 
