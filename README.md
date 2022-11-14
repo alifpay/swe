@@ -53,9 +53,9 @@ r := [...]int{99: -1}
 what is the output?
 ```Go
 s := []int{5, 6, 7, 8, 9}
-	s[3] = s[len(s)-1]
-	s = s[:len(s)-1]
-	fmt.Println(s)
+s[3] = s[len(s)-1]
+s = s[:len(s)-1]
+fmt.Println(s)
  ```
 
 8. What is the channel? 
