@@ -1,6 +1,15 @@
 # questions
 Golang questions
 
+What is the output of the below code?
+```Go
+sum := 0
+for {
+  sum++ 
+}
+fmt.Println(sum) 
+```
+
 1. What do you understand by byte and rune data types? How are they represented?
 2. What is a goroutine? what is difference between thread?
 3. Deadlocks and race conditions?
