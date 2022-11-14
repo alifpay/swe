@@ -18,11 +18,13 @@ package main
 
 import "fmt"  
 
-const (   
-       x = 7  
-       y   
-       z   
-)  
+type Aa uint
+
+const (
+	x    Aa = 1 << iota 
+	y                      
+	z                                    
+)
 func main() {  
  fmt.Println(x, y, z)  
 }
@@ -43,11 +45,28 @@ arr2 := [...]int{2,3}
 fmt.Println(arr1==arr2)
 ```
 
+Explain bellow code
+```Go
+r := [...]int{99: -1}
+```
+
+what is the output?
+```Go
+s := []int{5, 6, 7, 8, 9}
+	s[3] = s[len(s)-1]
+	s = s[:len(s)-1]
+	fmt.Println(s)
+ ```
+
 8. What is the channel? 
 - What operations are available on the channel type?
 - What's the difference between unbuffered and buffered channels? 
+
 9. What is CGo in Golang?
+
 10. Explain the Golang map type and its advantages.
+- What is the zero value for a map type?
+
 11. Explain the defer statement in Golang. Give an example of a deferred function’s call.
  - In what order are multiple defer statements called?
 
@@ -64,6 +83,8 @@ func main() {
   fmt.Println(message)
 }
 ```
+
+Explain struct in Go
 
 
 what is the Reflection (reflect) in Go ?
