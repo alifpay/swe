@@ -11,9 +11,6 @@ fmt.Println(sum)
 ```
 
 - What do you understand by byte and rune data types? How are they represented?
-- What is a goroutine? what is difference between thread?
-- Deadlocks and race conditions?
-
 - What are the three uses of "..." in Go?  
 - What's the difference between a type definition and a type alias?  
 - What does the keyword "make" do?  
@@ -74,10 +71,6 @@ func(l []int) {
 fmt.Println(s[0]) 
 ```
 
-- What is the channel? 
-- What operations are available on the channel type?
-- What's the difference between unbuffered and buffered channels? 
-
 - What is CGo in Golang?
 
 - Explain the Golang map type and its advantages.
@@ -134,6 +127,29 @@ func main(){
 
 - What is an interface? 
 - What is the empty interface and type Assertion?
+
+- What is the channel? 
+- What operations are available on the channel type?
+- What's the difference between unbuffered and buffered channels? 
+
+What does the following code print?
+```Go
+c := make(chan int, 1)
+for done := false; !done; {
+  select {
+  default:
+    fmt.Print(1)
+    done = true
+  case <-c:
+    fmt.Print(2)
+    c = nil
+  case c <- 1:
+    fmt.Print(3)
+  }
+}
+```
+- What is a goroutine? what is difference between thread?
+- Deadlocks and race conditions?
 
 - What is the Reflection (reflect) in Go ?
 
