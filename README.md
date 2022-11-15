@@ -148,7 +148,19 @@ for done := false; !done; {
   }
 }
 ```
+
+
+- What happens if you send or receive on a nil channel?
+- What value do you see when you read from a closed channel?
+- How do you check whether a channel has been closed?
+
+```Go
+r := <-c
+```
 - What is a goroutine? what is difference between thread?
+- What would you use in Go if you wanted to do more than one thing at the same time?
+- What keyword is used to start a new independently running task?
+- What order do different goroutines run in?
 - Deadlocks and race conditions?
 
 - What is the Reflection (reflect) in Go ?
