@@ -1,6 +1,20 @@
 # questions
 Golang questions
 
+- How many bytes of memory does a single precision float32 use?
+- Is it possible to change a specific character in a string?
+- What is the output of the below code?
+```Go
+var n uint8 = 255
+n += 1
+fmt.Println(n)
+```
+- Explain the code below
+```Go
+str:="dushanbe"
+str[0] = 'D' 
+```
+
 - What is the output of the below code?
 ```Go
 sum := 0
@@ -9,6 +23,9 @@ for {
 }
 fmt.Println(sum) 
 ```
+
+- What does the built-in len function do when passed a string?
+- What is a := "10" - 1 in Go?
 
 - What do you understand by byte and rune data types? How are they represented?
 - What are the three uses of "..." in Go?  
@@ -39,8 +56,7 @@ func main() {
 nums := [6]int{2, 3, 5, 7, 11, 13}
 slice1 := nums[1:4]
 ```
-
-- Is it possible to change a specific character in a string?
+- What mistakes can be avoided by using the range keyword to iterate over an array?
 
 - What is the output of the below code?
 ```Go
