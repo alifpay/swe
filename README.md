@@ -26,6 +26,7 @@ fmt.Println(sum)
 
 - What does the built-in len function do when passed a string?
 - What is a := "10" - 1 in Go?
+- How to effectively concat multiple string?
 
 - What do you understand by byte and rune data types? How are they represented?
 - What are the three uses of "..." in Go?  
@@ -57,6 +58,7 @@ nums := [6]int{2, 3, 5, 7, 11, 13}
 slice1 := nums[1:4]
 ```
 - What mistakes can be avoided by using the range keyword to iterate over an array?
+- How does "append" work?
 
 - What is the output of the below code?
 ```Go
@@ -143,10 +145,12 @@ func main(){
 
 - What is an interface? 
 - What is the empty interface and type Assertion?
+- What is the type switch?
 
 - What is the channel? 
 - What operations are available on the channel type?
 - What's the difference between unbuffered and buffered channels? 
+- What happens if you pass value to a closed channel?
 
 What does the following code print?
 ```Go
