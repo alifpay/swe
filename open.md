@@ -18,3 +18,68 @@ When we talk about being closed, we are talking about existing code and minimizi
 
 You can think of OCP as a risk-mitigation strategy. Modifying existing code always has some risk involved, and changes to the code used by others especially so. While we can and should be protecting ourselves from this risk with unit tests, these are restricted to scenarios that we intend and misuses that we can imagine; they will not cover everything our users can come up with.
 
+```Go
+package main
+
+type Cat struct {
+        Name string
+}
+
+func (c Cat) Legs() int { return 4 }
+
+func (c Cat) PrintLegs() {
+        fmt.Printf("I have %d legs\n", c.Legs())
+}
+
+type OctoCat struct {
+        Cat
+}
+
+func (o OctoCat) Legs() int { return 5 }
+
+func main() {
+        var octo OctoCat
+        fmt.Println(octo.Legs()) // 5
+        octo.PrintLegs()         // I have 4 legs
+}
+```
+
+
+interface
+
+```Go
+// Click here and start typing.
+package main
+
+import "fmt"
+
+type Shape interface {
+	Draw()
+}
+
+func DrawAllShapes(shapes []Shape) {
+	for _, sh := range shapes {
+		sh.Draw()
+	}
+}
+
+type Circle struct {
+}
+
+func (p *Circle) Draw() {
+	fmt.Println("Draw cirle!")
+}
+
+type Square struct {
+}
+
+func (p *Square) Draw() {
+	fmt.Println("Draw square!")
+}
+
+func main() {
+	shapes := []Shape{&Circle{}, &Square{}}
+	DrawAllShapes(shapes)
+}
+
+```
