@@ -125,3 +125,23 @@ You’ll save yourself headaches that come with deleting or adding code lines to
 Refactoring is all about  bringing improvements to internal software structure without having any effect on its behavior or functions. Refactoring is an integral part of the perpetual 
 software maintenance process and it involves frequently reviewing and improving the code to make it lighter and more powerful.
 
+2.18 Minimum viable product (MVP)
+
+When creating something new, it is best to have it do the least it can do really well rather than have it do everything 
+it *could* do but not quite as well. That’s called the minimum viable product (MVP).
+
+Doing the MVP makes it easier to demonstrate the utility to a user or customer. 
+And there is less to correct if it is wrong, and less invested if it fails.
+
+1.19  Beware race conditions
+
+Generally, a race condition is the multithreaded violation of a design by contract.
+
+In its simplest form: If two threads are modifying the same variable and if one thread does it first, things are fine. But if the second thread modifies the variable first, you have an error—that is a race condition.
+
+It isn't always possible to detect these sorts of design flaws. There is no unit test that can catch them because frequently they are intermittent and occur only under load. Heavily defensive design and avoiding cooperation among threads are good ways to prevent race conditions. Still, even with messaging and event-driven software, there are other versions of race conditions that are possible (just less likely). Concurrency is just hard.
+
+2.20 Test first
+
+In a modern IDE, you should test first. That means to write a unit test first and then have it generate your classes and such. This results in higher quality software because it makes highly testable software. It also tends to cause you to follow other design principles, like design by contract.
+
