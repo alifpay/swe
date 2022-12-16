@@ -8,4 +8,20 @@ Book: Patterns, Principles, and Practices of Domain-Driven Design
 
 
 https://threedots.tech/post/ddd-lite-in-go-introduction/
+
 https://github.com/MaksimDzhangirov/practicalDDD
+
+https://programmingpercy.tech/blog/how-to-domain-driven-design-ddd-golang/
+
+https://www.calhoun.io/moving-towards-domain-driven-design-in-go/
+
+https://habr.com/ru/company/constanta/blog/675408/
+
+https://mehdihadeli.github.io/awesome-go-education/ddd/
+
+https://dev.to/stevensunflash/using-domain-driven-design-ddd-in-golang-3ee5
+
+https://engineering.grab.com/domain-driven-development-in-golang
+
+https://blog.devgenius.io/go-golang-clean-architecture-repositories-vs-transactions-9b3b7c953463
+
