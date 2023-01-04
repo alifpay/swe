@@ -1,4 +1,4 @@
-Event-Driven Architecture
+### Event-Driven Architecture
 
 Event-driven architecture involves events. You have a number of services or applications within a whole system, and each of those applications is emitting events that have some meaning to the overall system, or at least some services or other applications within the system. And when you emit those events, that is the driven part. That’s where we are driving those events toward some other services or applications in the system, and they’re going to react to those. And so really, reacting to events is what the other systems do.
 
@@ -8,7 +8,7 @@ Everything related to the event-driven is passive. They aren’t doing anything 
 
 One good design technique when you receive an event in an event-driven architecture is you don’t consume that event deeply internally into your model. Because that creates a very strong coupling between whoever emitted that event and published that event to you.
 
-Benefits of EDA
+### Benefits of EDA
 
 Creating commands from the events, that helps with decoupling.
 
@@ -18,7 +18,7 @@ You do have latency at various times in the network. You will occasionally have 
 
 You are actually embracing latency. You’re embracing the network. You don’t even care, really, if there is latency. Unless it’s too much latency, like really, really too much latency. But that’s not a programmer’s decision. That’s not a software developer’s decision. Too much latency is the decision of the business. And you simply have, that’s why, again, conversations. So you ask the business, how long is too long?
 
-Eventual Consistency
+### Eventual Consistency
 
 If two, let’s say, entities are dependent on some change, like one entity in one context has a change made to it, and another entity in another context needs a compensating change for that, or a reactive change based on the other change that happened, the only really practical way that you can do that is through eventual consistency.
 
@@ -26,13 +26,13 @@ A lot of developers can’t deal with some of the ways that DDD wants to deal wi
 
 When something goes wrong with choreography, it’s more difficult potentially to figure out where something went wrong. But if you only have one or two places where something could go wrong, it’s not much of a challenge.
 
-Event Storming
+### Event Storming
 
 Event storming is an activity in lightweight modeling. You start with big picture modeling. So this is where you’re trying to understand the process, the overall process through an entire system, as it relates to your current core domain. And so you’re using sticky notes of certain colors. And each of the colors represents a certain thing within the model. And the primary one is orange. And orange represents events.
 
 Purple sticky represents policies. And a policy is basically a set of business rules.
 
-Event Sourcing
+### Event Sourcing
 
 Event sourcing uses events and a stream of events to represent some state.
 
