@@ -186,3 +186,9 @@ r := <-c
 - What is the Reflection (reflect) in Go ?
 
 - What is the unsafe package in Go ?
+
+
+for more
+
+https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/go/go-quiz.md
+
