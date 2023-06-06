@@ -192,3 +192,4 @@ for more
 
 https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/go/go-quiz.md
 
+https://www.knowledgehut.com/interview-questions/golang-interview-questions
